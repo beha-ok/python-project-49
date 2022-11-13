@@ -5,6 +5,7 @@ def engine_games(game):
     count = 0
     print("Welcome to the Brain Games!")
     user_name = string("May I have your name? ")
+    print(f'Hello, {user_name}')
     print(f'{game.game_offer}')
     while count < 3:
         questions, result_questions = game.raund()

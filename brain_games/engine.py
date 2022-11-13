@@ -9,12 +9,13 @@ def engine_games(game):
     while count < 3:
         questions, result_questions = game.raund()
         print(f"Question: {questions}")
-        answer = string(f"Your answer: ")
+        answer = string('Your answer: ')
         if answer != result_questions:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{result_questions}'")
+            print(f"'{answer}' is wrong answer ;(. \
+Correct answer was '{result_questions}'")
             print(f"Let's try again, {user_name}!")
             break
         count += 1
-        print(f'Correct!')
+        print('Correct!')
     else:
         print(f"Congratulations, {user_name}!")
